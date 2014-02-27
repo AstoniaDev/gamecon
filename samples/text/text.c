@@ -303,7 +303,7 @@ void draw_char(int x, int y, char c, int r, int g, int b)
           "  **    ",
           " **     ",
           "**      ",
-          "******* " },
+          "******  " },
 
         { "        ",
           "        ",
