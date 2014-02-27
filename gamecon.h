@@ -31,6 +31,4 @@ int GC_CPressed();
 int GC_DPressed();
 int GC_ResetPressed();
 
-int GC_OnUpPressed();
-
 #endif
