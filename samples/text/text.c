@@ -69,7 +69,7 @@ void draw_text(int x, int y, char text[], int r, int g, int b)
 
 void draw_char(int x, int y, char c, int r, int g, int b)
 {
-    static char font[27][FONT_WIDTH][FONT_HEIGHT] =
+    static char font[27][FONT_HEIGHT][FONT_WIDTH] =
     {
         { "        ",
           "  ***   ",
