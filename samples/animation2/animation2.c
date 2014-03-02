@@ -16,15 +16,15 @@ enum
     CLOUD_WIDTH = 19,
     CLOUD_HEIGHT = 10,
     CLOUD_Y = 5,
-    CLOUD_COUNT = 3,
+    CLOUD_COUNT = 2,
     CLOUD_SPACING = 35,
-    CLOUD_SLOWNESS = 7,
+    CLOUD_SLOWNESS = 15,
     
     TREE_WIDTH = 11,
     TREE_HEIGHT = 15,
     TREE_Y = HEIGHT - TREE_HEIGHT,
-    TREE_COUNT = 6,
-    TREE_SPACING = 15,
+    TREE_COUNT = 5,
+    TREE_SPACING = 20,
     TREE_SLOWNESS = 1
 };
 
@@ -34,7 +34,7 @@ void draw_tree(int x, int y);
 
 int main()
 {
-    GC_Init("Game Console Sample: Animation", WIDTH, HEIGHT, BLOCK);
+    GC_Init("Game Console Sample: Animation 2", WIDTH, HEIGHT, BLOCK);
 
     int cloud_x[CLOUD_COUNT];
     int tree_x[TREE_COUNT];
@@ -43,9 +43,9 @@ int main()
     //
     int i;
     for(i = 0; i < CLOUD_COUNT; ++i)
-        cloud_x[i] = i * CLOUD_SPACING;
+        cloud_x[i] = (i + 1) * CLOUD_SPACING;
     for(i = 0; i < TREE_COUNT; ++i)
-        tree_x[i] = i * TREE_SPACING;
+        tree_x[i] = (i + 1) * TREE_SPACING;
 
     // Animation
     //
