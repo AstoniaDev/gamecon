@@ -88,21 +88,6 @@ int main()
     return 0;
 }
 
-void draw(int x, int y)
-{
-    int i;
-    for(i = 0; i < WIDTH; ++i)
-    {
-        int j;
-        for(j = 0; j < HEIGHT; ++j)
-            GC_Set(i, j, 0, 0, 100);
-    }
-
-    GC_Set(x, y, 255, 255, 0);
-    GC_Flip();
-    GC_Sleep(100);
-}
-
 void draw_background()
 {
     const static char sun[SUN_HEIGHT][SUN_WIDTH] =
